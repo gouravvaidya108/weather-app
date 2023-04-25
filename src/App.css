@@ -1,0 +1,46 @@
+html,
+body,
+#root,
+.App {
+  height: 100%;
+  margin: 0;
+  background: linear-gradient(-35deg, #f1946f 0%, rgb(237, 135, 113));
+}
+::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.centered-div {
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  height: 50%;
+  width: 60%;
+  justify-content: center;
+  align-items: center;
+  margin: 16px;
+  overflow-y: auto;
+}
+
+/* Responsive styles for tablet devices */
+@media (max-width: 768px) {
+  .centered-div {
+    width: calc(70% - 16px);
+    height: calc(50% - 16px); /* Adjust the height for tablet devices */
+  }
+}
+
+/* Responsive styles for mobile devices */
+@media (max-width: 480px) {
+  .centered-div {
+    width: calc(90% - 16px);
+    height: calc(70% - 16px); /* Adjust the height for mobile devices */
+  }
+}
